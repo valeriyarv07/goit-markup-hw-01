@@ -20,7 +20,10 @@ body {
     
     font-family: Raleway, sans-serif;
     font-size: 26px;
+    font-weight: 700;
     line-height: 1.19;
+
+    text-decoration: none;
 
 }
 .accent {
@@ -73,6 +76,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
 
 }
 
@@ -156,12 +160,21 @@ body {
     background-color: var(--bcg-color) ;
 }
 
-.footer .contacts { 
-
+.footer .logo {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.footer-contacts { 
+    color: rgba(255, 255, 255, 0.6);;
     font-size: 14px;
     line-height: 1.71;
 
 }
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+    color: var(--accent-color);
+    text-decoration: none;
 
 
 /*цвет основного текста #212121 */
