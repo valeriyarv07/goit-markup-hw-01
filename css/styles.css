@@ -4,6 +4,7 @@
     --white-color: #ffffff;
     --text-decoration-color: #757575;
     --bcg-color: #2F303A;
+    --bcg-color-light: #F5F4FA;
 
 }
 
@@ -76,7 +77,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+    text-decoration: none;
 
 }
 
@@ -106,7 +107,7 @@ body {
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
 
 }
@@ -124,13 +125,25 @@ body {
     align-items: center;
     text-align: center;
 
+    cursor: pointer;
+
 }
 
-/* button-primary пока не заполняла */
 .button.primary {
-
+    color: var(--primary-text-color);
+    background-color: var(--bcg-color-light);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
 }
-/* или secondary */
+
+.button.primary:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
 
 .team {
 
@@ -165,27 +178,54 @@ body {
     text-decoration: none;
 }
 .footer-contacts { 
-    color: rgba(255, 255, 255, 0.6);;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
-
+    text-decoration: none;
 }
 
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
     color: var(--accent-color);
     text-decoration: none;
+}
 
+.footer-contacts .address {
+    color: var(--white-color);
 
-/*цвет основного текста #212121 */
+}
 
-/* вторичний цвет #757575 */
+.portfolio {
+    text-decoration: none;
+}
 
-/* синий #2196F3 */
+.filters {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+}
 
-/* белый #ffffff */
+.examples  {
+    text-decoration: none;
+}
 
-/* фон темный #2F303A */
+.examples .title {
+    color: var(--primary-text-color);
 
-/* фон серый #F5F4FA */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.examples .text {
+    color: var(--text-decoration-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    text-decoration: none;
+
+}
 
